@@ -1381,38 +1381,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
 </package>
-<package name="MICROSD">
-<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
-<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
-<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
-<wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
-<wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
-<wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
-<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
-<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
-<wire x1="0.4" y1="-19.4" x2="1.6" y2="-20.6" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-20.6" x2="10.8" y2="-20.6" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-20.6" x2="12.1" y2="-19.5" width="0.127" layer="21" curve="90"/>
-<smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
-<smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
-<smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
-<smd name="CD2" x="8" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
-<smd name="8" x="1.3" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="7" x="2.4" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="6" x="3.5" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
-<smd name="5" x="4.6" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="4" x="5.7" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
-<smd name="3" x="6.8" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
-<smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
-<text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
-</package>
 <package name="SMA_EDGELAUNCH">
 <wire x1="-9.2075" y1="2.54" x2="-8.255" y2="2.54" width="0.2032" layer="51"/>
 <wire x1="-8.255" y1="2.54" x2="-8.255" y2="3.175" width="0.2032" layer="51"/>
@@ -1697,65 +1665,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages3d>
 <package3d name="SOT23-3" urn="urn:adsk.eagle:package:38446/1" type="box" library_version="1">
 <description>SOT23-3</description>
-</package3d>
-</packages3d>
-</library>
-<library name="SparkFun-Clocks" urn="urn:adsk.eagle:library:511">
-<description>&lt;h3&gt;SparkFun Clocks, Oscillators and Resonators&lt;/h3&gt;
-This library contains the real-time clocks, oscillators, resonators, and crystals we use. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SO08" urn="urn:adsk.eagle:footprint:37509/1" library_version="1">
-<description>SOIC, 0.15 inch width</description>
-<wire x1="2.3368" y1="1.9463" x2="-2.3368" y2="1.9463" width="0.2032" layer="21"/>
-<wire x1="2.4368" y1="-1.9463" x2="2.7178" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
-<wire x1="-2.7178" y1="1.4653" x2="-2.3368" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
-<wire x1="2.3368" y1="1.9463" x2="2.7178" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
-<wire x1="-2.7178" y1="-1.6653" x2="-2.3368" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
-<wire x1="-2.3368" y1="-1.9463" x2="2.4368" y2="-1.9463" width="0.2032" layer="21"/>
-<wire x1="2.7178" y1="-1.5653" x2="2.7178" y2="1.5653" width="0.2032" layer="21"/>
-<wire x1="-2.667" y1="0.6096" x2="-2.667" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
-<wire x1="-2.7178" y1="1.4526" x2="-2.7178" y2="0.6096" width="0.2032" layer="21"/>
-<wire x1="-2.7178" y1="-1.6653" x2="-2.7178" y2="-0.6604" width="0.2032" layer="21"/>
-<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
-<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
-<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
-<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
-<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
-<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
-<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
-<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
-<smd name="1" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="2" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="5" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="6" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<text x="-3.175" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
-<polygon width="0.002540625" layer="21">
-<vertex x="-2.69875" y="-2.38125" curve="90"/>
-<vertex x="-3.01625" y="-2.06375" curve="90"/>
-<vertex x="-3.33375" y="-2.38125" curve="90"/>
-<vertex x="-3.01625" y="-2.69875" curve="90"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="SO08" urn="urn:adsk.eagle:package:37530/1" type="box" library_version="1">
-<description>SOIC, 0.15 inch width</description>
 </package3d>
 </packages3d>
 </library>
@@ -2165,21 +2074,7 @@ https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV
 <text x="-2.54" y="2.54" size="1.27" layer="27">&gt;Value</text>
 <circle x="-2.1844" y="2.2352" radius="0.209453125" width="0" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="atmel" urn="urn:adsk.eagle:library:105">
-<description>&lt;b&gt;AVR Devices&lt;/b&gt;&lt;p&gt;
-Configurable logic, microcontrollers, nonvolatile memories&lt;p&gt;
-Based on the following sources:&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;www.atmel.com
-&lt;li&gt;CD-ROM : Configurable Logic Microcontroller Nonvolatile Memory
-&lt;li&gt;CadSoft download site, www.cadsoft.de or www.cadsoftusa.com , file at90smcu_v400.zip
-&lt;li&gt;avr.lbr
-&lt;/ul&gt;
-&lt;author&gt;Revised by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MLF44-TH" urn="urn:adsk.eagle:footprint:4264/1" library_version="1">
+<package name="MLF44-TH">
 <description>&lt;b&gt;44M1&lt;/b&gt; Micro Lead Frame package (MLF)&lt;p&gt;
 Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
 <wire x1="-3.4" y1="2.8" x2="-3.4" y2="3.4" width="0.254" layer="21"/>
@@ -2287,13 +2182,92 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <rectangle x1="-2.125" y1="3" x2="-1.875" y2="3.5" layer="51"/>
 <rectangle x1="-2.625" y1="3" x2="-2.375" y2="3.5" layer="51"/>
 </package>
+<package name="MICROSD">
+<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
+<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-19.4" x2="1.6" y2="-20.6" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-20.6" x2="10.8" y2="-20.6" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-20.6" x2="12.1" y2="-19.5" width="0.127" layer="21" curve="90"/>
+<smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
+<smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
+<smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="CD2" x="8" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="8" x="1.3" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="7" x="2.4" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="6" x="3.5" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="5" x="4.6" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="4" x="5.7" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="3" x="6.8" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
+<smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="SO08" urn="urn:adsk.eagle:footprint:38406/1+">
+<description>SOIC, 0.15 inch width</description>
+<wire x1="2.3368" y1="1.9463" x2="-2.3368" y2="1.9463" width="0.2032" layer="21"/>
+<wire x1="2.4368" y1="-1.9463" x2="2.7178" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
+<wire x1="-2.7178" y1="1.4653" x2="-2.3368" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
+<wire x1="2.3368" y1="1.9463" x2="2.7178" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
+<wire x1="-2.7178" y1="-1.6653" x2="-2.3368" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
+<wire x1="-2.3368" y1="-1.9463" x2="2.4368" y2="-1.9463" width="0.2032" layer="21"/>
+<wire x1="2.7178" y1="-1.5653" x2="2.7178" y2="1.5653" width="0.2032" layer="21"/>
+<wire x1="-2.667" y1="0.6096" x2="-2.667" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-2.7178" y1="1.4526" x2="-2.7178" y2="0.6096" width="0.2032" layer="21"/>
+<wire x1="-2.7178" y1="-1.6653" x2="-2.7178" y2="-0.6604" width="0.2032" layer="21"/>
+<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
+<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
+<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
+<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
+<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
+<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
+<smd name="1" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<text x="-3.175" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="21">
+<vertex x="-2.69875" y="-2.38125" curve="90"/>
+<vertex x="-3.01625" y="-2.06375" curve="90"/>
+<vertex x="-3.33375" y="-2.38125" curve="90"/>
+<vertex x="-3.01625" y="-2.69875" curve="90"/>
+</polygon>
+</package>
+<package name="SOT23-3" urn="urn:adsk.eagle:footprint:38398/1+">
+<description>SOT23-3</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
-<packages3d>
-<package3d name="MLF44-TH" urn="urn:adsk.eagle:package:4352/1" type="box" library_version="1">
-<description>44M1 Micro Lead Frame package (MLF)
-Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
-</package3d>
-</packages3d>
 </library>
 <library name="resistor" urn="urn:adsk.eagle:library:348">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
@@ -4992,23 +4966,33 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="J5" library="bschulz" package="1X10_3.5MM_SCREW" value="" x="63.627" y="39.624" rot="R180"/>
 <element name="J8" library="bschulz" package="1X10_3.5MM_SCREW" value="" x="14.097" y="4.064"/>
 <element name="J9" library="bschulz" package="1X10_3.5MM_SCREW" value="" x="50.927" y="4.064"/>
-<element name="Q5" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:38446/1" value="4.3A/20V/54mΩ" x="82.9945" y="34.2265" rot="R90">
-<attribute name="PROD_ID" value="TRANS-11153" x="82.9945" y="34.2265" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q5" library="bschulz" package="SOT23-3" value="MOSFET_PCH-IRLML2244" x="82.9945" y="34.2265" rot="R90">
+<attribute name="DIGIKEY" value="FDN360PCT-ND" x="82.9945" y="34.2265" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Fairchild" x="82.9945" y="34.2265" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="FDN360P" x="82.9945" y="34.2265" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q6" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:38446/1" value="4.3A/20V/54mΩ" x="85.344" y="25.146" rot="R90">
-<attribute name="PROD_ID" value="TRANS-11153" x="85.344" y="25.146" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q6" library="bschulz" package="SOT23-3" value="MOSFET_PCH-IRLML2244" x="85.344" y="25.146" rot="R90">
+<attribute name="DIGIKEY" value="FDN360PCT-ND" x="85.344" y="25.146" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Fairchild" x="85.344" y="25.146" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="FDN360P" x="85.344" y="25.146" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q7" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:38446/1" value="4.3A/20V/54mΩ" x="15.367" y="25.654" smashed="yes" rot="R180">
+<element name="Q7" library="bschulz" package="SOT23-3" value="MOSFET_PCH-IRLML2244" x="15.367" y="25.654" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="FDN360PCT-ND" x="15.367" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Fairchild" x="15.367" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="FDN360P" x="15.367" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.018" y="25.654" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRANS-11153" x="15.367" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q8" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:38446/1" value="220mA/50V/3.5Ω" x="20.92325" y="28.98775" smashed="yes" rot="R270">
+<element name="Q8" library="bschulz" package="SOT23-3" value="MOSFET-NCH-BSS138" x="20.92325" y="28.98775" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="BSS138LT3GOSCT-ND" x="20.92325" y="28.98775" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="ON Semiconductor" x="20.92325" y="28.98775" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="BSS138LT3G" x="20.92325" y="28.98775" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="20.92325" y="30.63875" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRANS-00830" x="20.92325" y="28.98775" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="Q9" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:38446/1" value="220mA/50V/3.5Ω" x="24.5745" y="25.81275" smashed="yes" rot="R270">
+<element name="Q9" library="bschulz" package="SOT23-3" value="MOSFET-NCH-BSS138" x="24.5745" y="25.81275" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="BSS138LT3GOSCT-ND" x="24.5745" y="25.81275" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="ON Semiconductor" x="24.5745" y="25.81275" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="BSS138LT3G" x="24.5745" y="25.81275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.5745" y="27.46375" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRANS-00830" x="24.5745" y="25.81275" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R16" library="rcl" package="R0603" value="FB" x="79.375" y="16.002" rot="R90"/>
 <element name="R17" library="rcl" package="R0603" value="FB" x="81.788" y="15.875" rot="R90"/>
@@ -5021,10 +5005,15 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="R47" library="rcl" package="R0603" value="10k" x="34.036" y="32.5755" rot="R90"/>
 <element name="R8" library="rcl" package="R0603" value="10k" x="23.3045" y="28.98775" rot="R90"/>
 <element name="R9" library="rcl" package="R0603" value="10k" x="25.8445" y="28.98775" rot="R90"/>
-<element name="RTC1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="SO08" package3d_urn="urn:adsk.eagle:package:37530/1" value="DS3231M" x="76.327" y="11.684" rot="R270">
-<attribute name="PROD_ID" value="IC-11985" x="76.327" y="11.684" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RTC1" library="bschulz" package="SO08" value="DS3231M" x="76.327" y="11.684" rot="R270">
+<attribute name="DIGIKEY" value="DS3231MZ+-ND" x="76.327" y="11.684" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Maxim" x="76.327" y="11.684" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="DS3231MZ+" x="76.327" y="11.684" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="MICROSD" value="MICROSD" x="16.8275" y="23.749" smashed="yes" rot="R270">
+<element name="U$2" library="bschulz" package="MICROSD" value="MICROSD" x="16.8275" y="23.749" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="3M5607CT-ND" x="16.8275" y="23.749" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="3M" x="16.8275" y="23.749" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="2908-05WB-MG" x="16.8275" y="23.749" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="12.8875" y="20.049" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="U$4" library="bschulz" package="WSON-10" value="TPS6217XTPS62177" x="92.5195" y="28.829" rot="R90">
@@ -5032,7 +5021,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="MF" value="TI" x="92.5195" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TPS62177DQCR" x="92.5195" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$7" library="bschulz" package="QFN38-5X7" value="LTC2495" x="31.877" y="28.194" rot="R90"/>
+<element name="U$7" library="bschulz" package="QFN38-5X7" value="LTC2495" x="31.877" y="28.194" rot="R90">
+<attribute name="DIGIKEY" value="LTC2495IUHF#PBF-ND" x="31.877" y="28.194" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="LT" x="31.877" y="28.194" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTC2495IUHF#PBF" x="31.877" y="28.194" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="U3" library="SparkFun-RF" library_urn="urn:adsk.eagle:library:531" package="RFM69HCW-XXXS2" package3d_urn="urn:adsk.eagle:package:39566/1" value="915MHz" x="109.902625" y="12.080875">
 <attribute name="PROD_ID" value="IC-11997" x="109.902625" y="12.080875" size="1.778" layer="27" display="off"/>
 </element>
@@ -5058,7 +5051,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="R26" library="rcl" package="R0603" value="10k" x="30.861" y="14.224" rot="R90"/>
 <element name="R27" library="rcl" package="R0603" value="10k" x="33.909" y="14.224" rot="R90"/>
 <element name="R28" library="rcl" package="R0603" value="10k" x="36.068" y="14.224" rot="R90"/>
-<element name="U$3" library="bschulz" package="WSON-10" value="TPS63061" x="102.362" y="32.258" rot="R180"/>
+<element name="U$3" library="bschulz" package="WSON-10" value="TPS63061" x="102.362" y="32.258" rot="R180">
+<attribute name="DIGIKEY" value="296-30204-1-ND" x="102.362" y="32.258" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TI" x="102.362" y="32.258" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="TPS63060DSCR" x="102.362" y="32.258" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="U$8" library="bschulz" package="WE-MAIA(4.1X4.1)" value="1uH" x="103.378" y="27.94" rot="R180"/>
 <element name="C1" library="rcl" package="C0603" value="0.1uF" x="104.521" y="34.925"/>
 <element name="C2" library="rcl" package="C0603" value="10uF" x="105.156" y="32.131" rot="R90"/>
@@ -5066,9 +5063,13 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="C19" library="rcl" package="C0603" value="22uF" x="97.536" y="30.607" rot="R270"/>
 <element name="R1" library="rcl" package="R0603" value="143k" x="98.679" y="33.782" rot="R270"/>
 <element name="R2" library="rcl" package="R0603" value="953k" x="96.52" y="33.782" rot="R270"/>
-<element name="U$6" library="bschulz" package="SAM-M8Q" value="SAM-M8Q" x="91.567" y="15.494"/>
-<element name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" package="MLF44-TH" package3d_urn="urn:adsk.eagle:package:4352/1" value="ATMEGA644M" x="58.166" y="27.813" rot="R270">
-<attribute name="MF" value="" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="U$6" library="bschulz" package="SAM-M8Q" value="SAM-M8Q" x="91.567" y="15.494">
+<attribute name="DIGIKEY" value="672-1054-1-ND" x="91.567" y="15.494" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SAM-M8Q-0" x="91.567" y="15.494" size="1.778" layer="27" display="off"/>
+</element>
+<element name="IC1" library="bschulz" package="MLF44-TH" value="ATMEGA644M" x="58.166" y="27.813" rot="R270">
+<attribute name="DIGIKEY" value="ATMEGA644A-MU-ND" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Atmel" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ATMEGA644P-20MU" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1748528" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="26R5636" x="58.166" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5121,7 +5122,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="12.065" y="3.556" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="" x="79.121" y="19.685" rot="R90"/>
-<element name="U$15" library="bschulz" package="CLVBA-FKA" value="CLVBA-FKA" x="79.629" y="31.623" rot="R180"/>
+<element name="U$15" library="bschulz" package="CLVBA-FKA" value="CLVBA-FKA" x="79.629" y="31.623" rot="R180">
+<attribute name="DIGIKEY" value="CLVBA-FKA-CAEDH8BBB7A363CT-ND" x="79.629" y="31.623" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Cree" x="79.629" y="31.623" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CLVBA-FKA-CAEDH8BBB7A363" x="79.629" y="31.623" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="330" x="81.026" y="28.067" rot="R90"/>
 <element name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="330" x="78.994" y="28.067" rot="R90"/>
 <element name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="330" x="83.058" y="28.067" rot="R90"/>
@@ -5131,7 +5136,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="OC_FARNELL" value="7434698" x="41.476396875" y="17.473390625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="41.476396875" y="17.473390625" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="U$16" library="bschulz" package="CLVBA-FKA" value="CLVBA-FKA" x="47.498" y="27.432"/>
+<element name="U$16" library="bschulz" package="CLVBA-FKA" value="CLVBA-FKA" x="47.498" y="27.432">
+<attribute name="DIGIKEY" value="CLVBA-FKA-CAEDH8BBB7A363CT-ND" x="47.498" y="27.432" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Cree" x="47.498" y="27.432" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CLVBA-FKA-CAEDH8BBB7A363" x="47.498" y="27.432" size="1.778" layer="27" display="off"/>
+</element>
 <element name="L2" library="bschulz" package="WE-LQS(4X4)" value="10uH" x="92.075" y="33.274"/>
 </elements>
 <signals>
