@@ -10480,27 +10480,6 @@ Holes are offset 0.005" to hold pins in place while soldering.
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="WSON-10">
-<smd name="P$1" x="-0.95" y="1" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$2" x="-0.95" y="0.5" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$3" x="-0.95" y="0" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$8" x="0.95" y="0" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$9" x="0.95" y="0.5" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$10" x="0.95" y="1" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$4" x="-0.95" y="-0.5" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$7" x="0.95" y="-0.5" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$6" x="0.95" y="-1" dx="0.5" dy="0.25" layer="1"/>
-<smd name="P$5" x="-0.95" y="-1" dx="0.5" dy="0.25" layer="1"/>
-<wire x1="-1.5875" y1="1.5875" x2="-1.5875" y2="1.42875" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="1.42875" x2="-1.5875" y2="-1.5875" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-1.5875" x2="1.5875" y2="-1.5875" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-1.5875" x2="1.5875" y2="1.5875" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="1.5875" x2="-1.42875" y2="1.5875" width="0.127" layer="21"/>
-<wire x1="-1.42875" y1="1.5875" x2="-1.5875" y2="1.5875" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="1.42875" x2="-1.42875" y2="1.42875" width="0.127" layer="21"/>
-<wire x1="-1.42875" y1="1.42875" x2="-1.42875" y2="1.5875" width="0.127" layer="21"/>
-<smd name="P$11" x="0" y="0" dx="0.84" dy="2.4" layer="1"/>
-</package>
 <package name="SKRPABE010_(SWITCH)">
 <smd name="P$1" x="-2.075" y="1.4" dx="1.05" dy="0.65" layer="1"/>
 <smd name="P$2" x="2.075" y="1.4" dx="1.05" dy="0.65" layer="1"/>
@@ -11146,24 +11125,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <pin name="9" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="10" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="TPS6217X">
-<pin name="VIN" x="-15.24" y="7.62" length="middle"/>
-<pin name="EN" x="-15.24" y="5.08" length="middle"/>
-<pin name="SLEEP" x="-15.24" y="2.54" length="middle"/>
-<pin name="AGND" x="-15.24" y="0" length="middle"/>
-<pin name="PGND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="NC" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="FB" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="PG" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="VOS" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="SW" x="15.24" y="7.62" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-10.16" y="10.922" size="1.27" layer="95">TPS6217x</text>
-<pin name="BODY" x="-15.24" y="-5.08" length="middle"/>
-</symbol>
 <symbol name="BUTTON">
 <pin name="1" x="0" y="0" visible="off" length="middle"/>
 <pin name="3" x="15.24" y="0" visible="off" length="middle" rot="R180"/>
@@ -11188,26 +11149,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-</symbol>
-<symbol name="TPS6306X">
-<pin name="VIN" x="-15.24" y="5.08" visible="pin" length="middle" direction="in"/>
-<pin name="EN" x="-15.24" y="2.54" visible="pin" length="middle" direction="in"/>
-<pin name="VAUX" x="-15.24" y="0" visible="pin" length="middle" direction="in"/>
-<pin name="PS/SYNC" x="-15.24" y="-7.62" visible="pin" length="middle" direction="in"/>
-<pin name="GND" x="-15.24" y="-10.16" visible="pin" length="middle" direction="in"/>
-<pin name="PGND" x="-15.24" y="-12.7" visible="pin" length="middle" direction="in"/>
-<pin name="L2" x="7.62" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
-<pin name="L1" x="-7.62" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
-<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="FB" x="15.24" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="PG" x="15.24" y="-10.16" visible="pin" length="middle" direction="in" rot="R180"/>
-<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<text x="-10.16" y="-17.78" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-20.32" size="1.27" layer="97">&gt;VALUE</text>
-<text x="-4.318" y="10.414" size="1.27" layer="95">TPS6306x</text>
 </symbol>
 <symbol name="SX1509">
 <description>&lt;h3&gt;Semtech SX1509&lt;/h3&gt;
@@ -11851,57 +11792,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS6217X">
-<description>&lt;b&gt;TPS6217x&lt;/b&gt; - Step Down Converter (Buck)
- 
-&lt;p&gt;Characteristics:
-&lt;ul&gt;
-&lt;li&gt;Vin: 4.75V ~ 28V&lt;/li&gt;
-&lt;li&gt;Vout: 1V ~ 6V (or 3.3V fixed)&lt;/il&gt;
-&lt;li&gt; Output Current: 500 mA &lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-&lt;p&gt;Digikey: &lt;br&gt;
-&lt;ul&gt;
-&lt;a href = "https://www.digikey.com/products/en?keywords=TPS62177"&gt; TPS62177 (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
-&lt;a href = "https://www.digikey.com/products/en/integrated-circuits-ics/pmic-voltage-regulators-dc-dc-switching-regulators/739?k=TPS62175"&gt; TPS62175 (Adjustable) &lt;/a&gt; 
-&lt;/ul&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="TPS6217X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WSON-10">
-<connects>
-<connect gate="G$1" pin="AGND" pad="P$6"/>
-<connect gate="G$1" pin="BODY" pad="P$11"/>
-<connect gate="G$1" pin="EN" pad="P$3"/>
-<connect gate="G$1" pin="FB" pad="P$5"/>
-<connect gate="G$1" pin="NC" pad="P$4"/>
-<connect gate="G$1" pin="PG" pad="P$7"/>
-<connect gate="G$1" pin="PGND" pad="P$1"/>
-<connect gate="G$1" pin="SLEEP" pad="P$8"/>
-<connect gate="G$1" pin="SW" pad="P$9"/>
-<connect gate="G$1" pin="VIN" pad="P$2"/>
-<connect gate="G$1" pin="VOS" pad="P$10"/>
-</connects>
-<technologies>
-<technology name="TPS62175">
-<attribute name="DIGIKEY" value="296-39451-1-ND" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TPS62175DQCR" constant="no"/>
-</technology>
-<technology name="TPS62177">
-<attribute name="DIGIKEY" value="296-41856-1-ND" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TPS62177DQCR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SKRPABE010">
 <description>SPST Switch
 Rated to 50 mA 16V (DC)</description>
@@ -11944,41 +11834,6 @@ Rated to 50 mA 16V (DC)</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TPS306*" uservalue="yes">
-<description>High input voltage buck-boost converter, 2A switch current, Vin = 2.5V to 12V</description>
-<gates>
-<gate name="G$1" symbol="TPS6306X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WSON-10">
-<connects>
-<connect gate="G$1" pin="EN" pad="P$3"/>
-<connect gate="G$1" pin="FB" pad="P$8"/>
-<connect gate="G$1" pin="GND" pad="P$7"/>
-<connect gate="G$1" pin="L1" pad="P$1"/>
-<connect gate="G$1" pin="L2" pad="P$10"/>
-<connect gate="G$1" pin="PG" pad="P$5"/>
-<connect gate="G$1" pin="PGND" pad="P$11"/>
-<connect gate="G$1" pin="PS/SYNC" pad="P$4"/>
-<connect gate="G$1" pin="VAUX" pad="P$6"/>
-<connect gate="G$1" pin="VIN" pad="P$2"/>
-<connect gate="G$1" pin="VOUT" pad="P$9"/>
-</connects>
-<technologies>
-<technology name="0">
-<attribute name="DIGIKEY" value="296-30204-1-ND" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TPS63060DSCR" constant="no"/>
-</technology>
-<technology name="1">
-<attribute name="DIGIKEY" value="296-30205-1-ND" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TPS63061DSCR" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -25146,6 +25001,115 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Power">
+<description>&lt;h3&gt;SparkFun Power Driver and Management ICs&lt;/h3&gt;
+In this library you'll find anything that has to do with power delivery, or making power supplies.
+&lt;p&gt;Contents:
+&lt;ul&gt;&lt;li&gt;LDOs&lt;/li&gt;
+&lt;li&gt;Boost/Buck controllers&lt;/li&gt;
+&lt;li&gt;Charge pump controllers&lt;/li&gt;
+&lt;li&gt;Power sequencers&lt;/li&gt;
+&lt;li&gt;Power switches&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="WSON-8-PAD">
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<smd name="6" x="0.25" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="5" x="0.75" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="8" x="-0.75" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="7" x="-0.25" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="2" x="-0.25" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="3" x="0.25" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="4" x="0.75" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="1" x="-0.75" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.6" dy="0.9" layer="1" cream="no"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
+<circle x="-1" y="-1" radius="0.05" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.45" x2="0.8" y2="0.45" layer="51"/>
+<rectangle x1="-0.375" y1="-1" x2="-0.125" y2="-0.7" layer="51"/>
+<rectangle x1="-0.875" y1="-1" x2="-0.625" y2="-0.7" layer="51"/>
+<rectangle x1="0.125" y1="-1" x2="0.375" y2="-0.7" layer="51"/>
+<rectangle x1="0.625" y1="-1" x2="0.875" y2="-0.7" layer="51"/>
+<rectangle x1="0.125" y1="0.7" x2="0.375" y2="1" layer="51" rot="R180"/>
+<rectangle x1="0.625" y1="0.7" x2="0.875" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.375" y1="0.7" x2="-0.125" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.875" y1="0.7" x2="-0.625" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.65" y1="-0.35" x2="0.65" y2="0.35" layer="31"/>
+<circle x="-1.5" y="-1" radius="0.22360625" width="0.2032" layer="21"/>
+<circle x="-1.5" y="-1" radius="0.22360625" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TPS62172">
+<description>&lt;h3&gt;TPS62172&lt;/h3&gt;
+
+3-17V 0.5A Step-Down Converter w/ DCS-Control</description>
+<pin name="VIN" x="-12.7" y="5.08" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" length="short"/>
+<pin name="AGND" x="-12.7" y="0" length="short"/>
+<pin name="PGND" x="-12.7" y="-2.54" length="short"/>
+<pin name="SW" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="VOS" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="PG" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="PAD" x="-12.7" y="-5.08" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-8.128" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPS62172" prefix="U">
+<description>&lt;h3&gt;Texas Instruments TPS62172&lt;/h3&gt;
+3-17V 0.5A Step-Down Converter with DCS control. Available in adjustable and fixed output voltage versions.&lt;br&gt;&lt;br&gt;
+
+Is packaged in an 8-pin WSON package measuring 2 × 2 mm (DSG).&lt;br&gt; &lt;br&gt;
+
+See a 3.3V fixed output version of this chip in action on the &lt;a href="https://www.sparkfun.com/products/11400"&gt;Electric Imp Breakout Board&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
+&lt;a href="http://www.ti.com/lit/gpn/tps62172"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS62172" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WSON-8-PAD">
+<connects>
+<connect gate="G$1" pin="AGND" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
+<connect gate="G$1" pin="PG" pad="8"/>
+<connect gate="G$1" pin="PGND" pad="1"/>
+<connect gate="G$1" pin="SW" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOS" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11307"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -25158,9 +25122,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="U$2" library="bschulz" deviceset="MICROSD" device=""/>
 <part name="RTC1" library="bschulz" deviceset="DS3231M" device=""/>
-<part name="U$4" library="bschulz" deviceset="TPS6217X" device="" technology="TPS62177"/>
+<part name="U$4" library="SparkFun-IC-Power" deviceset="TPS62172" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="22uF"/>
@@ -25306,22 +25269,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="87832-14" device=""/>
 <part name="U$16" library="bschulz" deviceset="CLVBA-FKA" device=""/>
 <part name="L2" library="bschulz" deviceset="INDUCTOR" device="LQS_4X4" value="10uH"/>
-<part name="U1" library="microbuilder" deviceset="VREG_TPS63060/1" device=""/>
-<part name="U5" library="microbuilder" deviceset="VREG_TPS63060/1" device=""/>
 <part name="U6" library="microbuilder" deviceset="VREG_TPS63060/1" device=""/>
-<part name="U$13" library="bschulz" deviceset="TPS306*" device="" technology="0" value="TPS63061"/>
-<part name="U$17" library="bschulz" deviceset="INDUCTOR" device="MAIA_4.1X4.1" value="1uH"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" value="22uF"/>
-<part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="143k"/>
-<part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="953k"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="22uF"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -25417,8 +25365,6 @@ Add ferite beads and/or protection diode?</text>
 <instance part="R23" gate="G$1" x="182.88" y="137.16" rot="R90"/>
 <instance part="R24" gate="G$1" x="190.5" y="137.16" rot="R90"/>
 <instance part="U$16" gate="G$1" x="309.372" y="53.594" rot="MR90"/>
-<instance part="U1" gate="G$1" x="203.2" y="200.66"/>
-<instance part="U5" gate="G$1" x="246.38" y="198.12"/>
 </instances>
 <busses>
 </busses>
@@ -26025,7 +25971,6 @@ Add ferite beads and/or protection diode?</text>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="L2"/>
 <wire x1="259.08" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -26191,12 +26136,10 @@ Add ferite beads and/or protection diode?</text>
 <text x="55.88" y="119.38" size="1.778" layer="91">3.3v
 TPS62177</text>
 <text x="20.32" y="63.5" size="1.778" layer="91">2.5v-12v</text>
-<text x="119.38" y="30.48" size="1.778" layer="91">2.5v-12v</text>
 </plain>
 <instances>
-<instance part="U$4" gate="G$1" x="66.04" y="99.06"/>
+<instance part="U$4" gate="G$1" x="66.04" y="101.6"/>
 <instance part="GND6" gate="1" x="40.64" y="91.44"/>
-<instance part="GND7" gate="1" x="81.28" y="88.9"/>
 <instance part="GND8" gate="1" x="48.26" y="91.44"/>
 <instance part="GND9" gate="1" x="109.22" y="93.98"/>
 <instance part="C3" gate="G$1" x="109.22" y="104.14"/>
@@ -26219,19 +26162,6 @@ TPS62177</text>
 <instance part="C27" gate="G$1" x="119.38" y="55.88"/>
 <instance part="L2" gate="G$1" x="93.98" y="106.68" rot="R90"/>
 <instance part="U6" gate="G$1" x="66.04" y="53.34"/>
-<instance part="U$13" gate="G$1" x="165.1" y="20.32"/>
-<instance part="U$17" gate="G$1" x="165.1" y="38.1" rot="R90"/>
-<instance part="C5" gate="G$1" x="144.78" y="17.78"/>
-<instance part="C6" gate="G$1" x="137.16" y="22.86"/>
-<instance part="GND14" gate="1" x="149.86" y="2.54"/>
-<instance part="C7" gate="G$1" x="190.5" y="12.7"/>
-<instance part="C8" gate="G$1" x="210.82" y="22.86"/>
-<instance part="GND17" gate="1" x="190.5" y="2.54"/>
-<instance part="GND21" gate="1" x="210.82" y="12.7"/>
-<instance part="R25" gate="G$1" x="185.42" y="10.16" rot="R90"/>
-<instance part="R29" gate="G$1" x="190.5" y="20.32" rot="R90"/>
-<instance part="C9" gate="G$1" x="226.06" y="22.86"/>
-<instance part="C15" gate="G$1" x="218.44" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -26243,20 +26173,16 @@ TPS62177</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="NC"/>
-<wire x1="81.28" y1="96.52" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="AGND"/>
-<wire x1="50.8" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="101.6" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="48.26" y1="99.06" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="101.6" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="PGND"/>
-<wire x1="48.26" y1="96.52" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="BODY"/>
-<wire x1="50.8" y1="93.98" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="99.06" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="PAD"/>
+<wire x1="53.34" y1="96.52" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<junction x="53.34" y="99.06"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -26268,7 +26194,7 @@ TPS62177</text>
 <wire x1="91.44" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="96.52" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="FB"/>
-<wire x1="88.9" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -26317,50 +26243,11 @@ TPS62177</text>
 <wire x1="127" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
 <junction x="119.38" y="48.26"/>
 </segment>
-<segment>
-<pinref part="U$13" gate="G$1" pin="PS/SYNC"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="12.7" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="17.78" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="12.7" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
-<junction x="144.78" y="12.7"/>
-<pinref part="U$13" gate="G$1" pin="PGND"/>
-<pinref part="U$13" gate="G$1" pin="GND"/>
-<wire x1="149.86" y1="7.62" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="12.7" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
-<junction x="149.86" y="12.7"/>
-<junction x="149.86" y="10.16"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="149.86" y1="5.08" x2="149.86" y2="7.62" width="0.1524" layer="91"/>
-<junction x="149.86" y="7.62"/>
-</segment>
-<segment>
-<pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="5.08" x2="190.5" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="5.08" x2="190.5" y2="5.08" width="0.1524" layer="91"/>
-<junction x="190.5" y="5.08"/>
-</segment>
-<segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="210.82" y1="15.24" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="17.78" x2="218.44" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="15.24" x2="210.82" y2="15.24" width="0.1524" layer="91"/>
-<junction x="210.82" y="15.24"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="17.78" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="15.24" x2="218.44" y2="15.24" width="0.1524" layer="91"/>
-<junction x="218.44" y="15.24"/>
-</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="SW"/>
-<wire x1="81.28" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -26368,9 +26255,7 @@ TPS62177</text>
 <segment>
 <wire x1="101.6" y1="106.68" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VOS"/>
-<wire x1="101.6" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="SLEEP"/>
-<wire x1="50.8" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="101.6" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="114.3" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
@@ -26387,10 +26272,10 @@ TPS62177</text>
 <net name="BATT+" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="EN"/>
-<wire x1="50.8" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="104.14" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VIN"/>
-<wire x1="48.26" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="104.14" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
@@ -26409,17 +26294,6 @@ TPS62177</text>
 <junction x="50.8" y="58.42"/>
 <pinref part="U6" gate="G$1" pin="EN"/>
 <wire x1="53.34" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$13" gate="G$1" pin="VIN"/>
-<pinref part="U$13" gate="G$1" pin="EN"/>
-<wire x1="149.86" y1="22.86" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<junction x="149.86" y="25.4"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
-<junction x="137.16" y="25.4"/>
-<label x="127" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -26447,23 +26321,6 @@ TPS62177</text>
 <junction x="119.38" y="58.42"/>
 <pinref part="U6" gate="G$1" pin="VOUT"/>
 </segment>
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<junction x="210.82" y="25.4"/>
-<pinref part="U$13" gate="G$1" pin="VOUT"/>
-<wire x1="180.34" y1="25.4" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="25.4" x2="218.44" y2="25.4" width="0.1524" layer="91"/>
-<label x="228.6" y="25.4" size="1.778" layer="95" xref="yes"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<junction x="190.5" y="25.4"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="25.4" x2="226.06" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="25.4" x2="228.6" y2="25.4" width="0.1524" layer="91"/>
-<junction x="226.06" y="25.4"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<junction x="218.44" y="25.4"/>
-</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -26476,38 +26333,6 @@ TPS62177</text>
 <pinref part="U6" gate="G$1" pin="FB"/>
 <wire x1="78.74" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="55.88" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="L2"/>
-<pinref part="U$17" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="L1"/>
-<pinref part="U$17" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="VAUX"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="20.32" x2="144.78" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="15.24" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="FB"/>
-<wire x1="180.34" y1="17.78" x2="185.42" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="17.78" x2="185.42" y2="15.24" width="0.1524" layer="91"/>
-<junction x="185.42" y="15.24"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<junction x="190.5" y="15.24"/>
 </segment>
 </net>
 <net name="N$32" class="0">
