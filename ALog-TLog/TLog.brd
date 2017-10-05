@@ -183,7 +183,7 @@
 <text x="80.264" y="8.66775" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">SDA</text>
 <text x="81.62925" y="10.7315" size="1.27" layer="51" font="vector" ratio="10" rot="SR270">SCL</text>
 <text x="100.584" y="2.159" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">I2C</text>
-<text x="20.92325" y="32.79775" size="1.27" layer="51" font="vector" ratio="10">ISP</text>
+<text x="21.87575" y="33.49625" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">ISP</text>
 <text x="115.22075" y="44.7675" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">VIN</text>
 <text x="32.639" y="44.831" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">A6</text>
 <text x="36.576" y="44.831" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">A7</text>
