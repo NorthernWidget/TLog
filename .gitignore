@@ -1,38 +1,44 @@
+# Ignore list for Eagle, a PCB layout tool
 
-*.b#1
+# Backup files
+*.s#?
+*.b#?
+*.l#?
 
-*.b#2
+# Eagle project file
+# It contains a serial number and references to the file structure
+# on your computer.
+# comment the following line if you want to have your project file included.
+eagle.epf
 
-*.b#3
+# Autorouter files
+*.pro
+*.job
 
-*.b#4
+# CAM files
+*.$$$
+*.cmp
+*.ly2
+*.l15
+*.sol
+*.plc
+*.stc
+*.sts
+*.crc
+*.crs
 
-*.b#5
+*.dri
+*.drl
+*.gpi
+*.pls
 
-*.b#6
+*.drd
+*.drd.*
 
-*.b#7
+*.info
 
-*.b#8
+*.eps
 
-*.b#9
+# file locks introduced since 7.x
+*.lck
 
-*.s#1
-
-*.s#2
-
-*.s#3
-
-*.s#4
-
-*.s#5
-
-*.s#6
-
-*.s#7
-
-*.s#8
-
-*.s#9
-
-\.DS_Store
