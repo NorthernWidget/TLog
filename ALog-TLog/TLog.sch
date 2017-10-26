@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -12824,6 +12825,29 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<package name="WE-LQS(5X5)">
+<description>&lt;p&gt;LQS Series Inductor &lt;br&gt; Manufacturer: Wurth &lt;br&gt; &lt;br&gt; Size: 5x5mm &lt;br&gt;
+Inductances: 470nH, 1uH, 1.2uH, 1.5uH, 2.2uH, 3.3uH, 3.9uH, 4.7uH, 5.6uH, &lt;br&gt;
+6.8uH, 8.2uH, 10uH, 15uH, 22uH, 33uH, 47uH, 68uH, 100uH, 1mH &lt;br&gt;
+Current: 0.2A ~ 4.9A &lt;/p&gt;
+
+&lt;p&gt; Digikey: &lt;a href = "https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?k=&amp;pkeyword=&amp;pv46=13332&amp;FV=fffc0511%2Cfffc06ed%2Cfffc02dc%2C1f140000%2Cffe00047%2Cffecaecb&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25"&gt; LQS (5x5mm) &lt;/a&gt;</description>
+<smd name="1" x="1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
+<smd name="2" x="-1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="22"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="22"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="22"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="22"/>
+<text x="-2.54" y="2.921" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="0806">
+<smd name="P$1" x="-0.725" y="0" dx="1.9" dy="0.85" layer="1" rot="R90"/>
+<smd name="P$2" x="0.725" y="0" dx="1.9" dy="0.85" layer="1" rot="R90"/>
+<wire x1="-1" y1="0.8" x2="-1" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.8" x2="1" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.8" x2="1" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1" y1="0.8" x2="-1" y2="0.8" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAM-M8Q">
@@ -13868,7 +13892,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR" uservalue="yes">
+<deviceset name="INDUCTOR" prefix="L" uservalue="yes">
 <description>Genaric indcutor</description>
 <gates>
 <gate name="G$1" symbol="L" x="0" y="0"/>
@@ -13884,6 +13908,24 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technologies>
 </device>
 <device name="MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LQS_5X5" package="WE-LQS(5X5)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0806" package="0806">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -15509,21 +15551,25 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE_PART" value="" constant="no"/>
 </technology>
 <technology name="10K">
 <attribute name="DIGIKEY" value="311-10.0KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0710KL" constant="no"/>
+<attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0727RL" constant="no"/>
+<attribute name="VALUE_PART" value="27" constant="no"/>
 </technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07330RL" constant="no"/>
+<attribute name="VALUE_PART" value="330" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16527,6 +16573,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="DGND" urn="urn:adsk.eagle:symbol:39415/1" library_version="1">
+<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="SUPPLY" library_version="1">
@@ -16534,6 +16586,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" urn="urn:adsk.eagle:component:39439/1" prefix="GND" library_version="1">
+<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -16762,7 +16828,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="bschulz" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
-<part name="C4" library="bschulz" deviceset="C-EU" device="C0603" technology="2.2UF" value="2.2uF"/>
+<part name="C4" library="bschulz" deviceset="C-EU" device="C0805" technology="10UF" value="2.2uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C10" library="bschulz" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16867,12 +16933,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C19" library="bschulz" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R1" library="bschulz" deviceset="R-EU_" device="R0603" value="143k">
+<part name="R1" library="bschulz" deviceset="R-EU_" device="R0603" value="111k">
 <attribute name="DIGIKEY" value="311-143KHRCT-ND"/>
 <attribute name="MF" value="Yageo"/>
 <attribute name="MPN" value="RC0603FR-07143KL"/>
 </part>
-<part name="R2" library="bschulz" deviceset="R-EU_" device="R0603" value="953k">
+<part name="R2" library="bschulz" deviceset="R-EU_" device="R0603" value="1M">
 <attribute name="DIGIKEY" value="311-953KHRCT-ND"/>
 <attribute name="MF" value="Yageo"/>
 <attribute name="MPN" value="RC0603FR-07953KL"/>
@@ -16980,10 +17046,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value="0791091006"/>
 </part>
 <part name="U$16" library="bschulz" deviceset="CLVBA-FKA" device=""/>
-<part name="L2" library="bschulz" deviceset="INDUCTOR" device="LQS_4X4" value="10uH">
-<attribute name="DIGIKEY" value="732-10754-1-ND"/>
+<part name="L2" library="bschulz" deviceset="INDUCTOR" device="0806" value="2.2uF">
+<attribute name="DIGIKEY" value="732-5709-1-ND"/>
 <attribute name="MF" value="Wurth"/>
-<attribute name="MPN" value="74404043022A"/>
+<attribute name="MPN" value="74438343022"/>
 </part>
 <part name="U6" library="bschulz" deviceset="TPS6306*" device="" technology="0"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="12pF">
@@ -16991,6 +17057,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" value="Samsung"/>
 <attribute name="MPN" value="CL10C120JB8NNNC"/>
 </part>
+<part name="C6" library="bschulz" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
+<part name="R25" library="bschulz" deviceset="R-EU_" device="R0603" technology="10K" value="10k"/>
+<part name="R29" library="bschulz" deviceset="R-EU_" device="R0603" technology="10K" value="10k"/>
+<part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17005,14 +17075,12 @@ Connect to MUX (open drain)</text>
 Connect SD_CD to mux input</text>
 <text x="83.82" y="172.72" size="1.778" layer="91">Note replace buttons!</text>
 <text x="167.64" y="172.72" size="1.778" layer="91">NOTE: Make one RGB part?</text>
-<text x="-25.4" y="129.54" size="1.778" layer="91">NOTE: Add crystal used on current boards</text>
 <text x="124.46" y="58.42" size="1.778" layer="91">Pin 12</text>
 <text x="124.46" y="134.62" size="1.778" layer="91">Pin A7</text>
 <text x="124.46" y="132.08" size="1.778" layer="91">Pin A6</text>
 <text x="124.46" y="129.54" size="1.778" layer="91">Pin A5</text>
 <text x="124.46" y="127" size="1.778" layer="91">Pin A4</text>
 <text x="124.46" y="66.04" size="1.778" layer="91">Pin 15</text>
-<text x="-25.4" y="134.62" size="1.778" layer="91">NOTE: Replace with correct crystal package!</text>
 <text x="101.6" y="38.1" size="1.778" layer="91">NOTE: Add LEDs to TX and RX lines? </text>
 <text x="332.74" y="116.84" size="1.778" layer="97">USB &amp; ISP</text>
 <text x="256.54" y="129.54" size="1.778" layer="91" rot="R180">NOTE:
@@ -17061,7 +17129,7 @@ Add ferite beads and/or protection diode?</text>
 <instance part="SUPPLY48" gate="GND" x="220.98" y="43.18"/>
 <instance part="SUPPLY49" gate="GND" x="203.2" y="43.18"/>
 <instance part="U2" gate="G$1" x="281.94" y="83.82"/>
-<instance part="U$14" gate="G$1" x="279.4" y="109.22"/>
+<instance part="U$14" gate="G$1" x="279.4" y="111.76"/>
 <instance part="D-" gate="G$1" x="248.92" y="96.52" smashed="yes" rot="R180">
 <attribute name="VALUE" x="252.73" y="99.822" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -17114,6 +17182,7 @@ Add ferite beads and/or protection diode?</text>
 <attribute name="MF" x="35.56" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="35.56" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
+<instance part="C6" gate="G$1" x="30.48" y="132.08" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17376,10 +17445,15 @@ Add ferite beads and/or protection diode?</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="RESET"/>
 <wire x1="45.72" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="121.92" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
 <junction x="38.1" y="121.92"/>
 <junction x="45.72" y="121.92"/>
 <label x="48.26" y="121.92" size="1.778" layer="95" rot="R180"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="132.08" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
+<junction x="40.64" y="121.92"/>
 </segment>
 </net>
 <net name="SD_CS" class="0">
@@ -17476,34 +17550,10 @@ Add ferite beads and/or protection diode?</text>
 <pinref part="U2" gate="G$1" pin="DTR#"/>
 <wire x1="302.26" y1="88.9" x2="309.88" y2="88.9" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="VUSB" class="0">
 <segment>
-<wire x1="223.52" y1="109.22" x2="236.22" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="109.22" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="109.22" x2="236.22" y2="58.42" width="0.1524" layer="91"/>
-<junction x="236.22" y="109.22"/>
-<pinref part="U$11" gate="G$1" pin="VUSB"/>
-<wire x1="236.22" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="58.42" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="58.42" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
-<junction x="220.98" y="58.42"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="MICRO_USB" gate="G$1" pin="VDD"/>
-<junction x="223.52" y="96.52"/>
-</segment>
-<segment>
-<wire x1="311.912" y1="38.1" x2="297.18" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="38.1" x2="297.18" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="VUSB"/>
-<pinref part="U$16" gate="G$1" pin="ANODE"/>
-<wire x1="311.912" y1="45.974" x2="311.912" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<pinref part="U$14" gate="G$1" pin="VUSB"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="20.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -17621,9 +17671,9 @@ Add ferite beads and/or protection diode?</text>
 </net>
 <net name="RADIO_INT" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT5/ADC5)PA5"/>
-<wire x1="104.14" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
-<label x="109.22" y="129.54" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="(PCINT10/INT2/AIN0)PB2"/>
+<wire x1="104.14" y1="99.06" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
+<label x="109.22" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOG_INT" class="0">
@@ -17721,6 +17771,38 @@ Add ferite beads and/or protection diode?</text>
 <net name="N$29" class="0">
 <segment>
 <wire x1="259.08" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<wire x1="223.52" y1="109.22" x2="236.22" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="109.22" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="109.22" x2="236.22" y2="58.42" width="0.1524" layer="91"/>
+<junction x="236.22" y="109.22"/>
+<pinref part="U$11" gate="G$1" pin="VUSB"/>
+<wire x1="236.22" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="58.42" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="58.42" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
+<junction x="220.98" y="58.42"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="MICRO_USB" gate="G$1" pin="VDD"/>
+<junction x="223.52" y="96.52"/>
+<wire x1="236.22" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
+<label x="241.3" y="109.22" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="U$14" gate="G$1" pin="VUSB"/>
+<wire x1="279.4" y1="109.22" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="311.912" y1="38.1" x2="297.18" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="38.1" x2="297.18" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="VUSB"/>
+<pinref part="U$16" gate="G$1" pin="ANODE"/>
+<wire x1="311.912" y1="45.974" x2="311.912" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -18036,18 +18118,6 @@ TPS62177</text>
 </net>
 <net name="BATT+" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="EN"/>
-<wire x1="53.34" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="104.14" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
-<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="104.14" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<label x="33.02" y="106.68" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <wire x1="50.8" y1="55.88" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
@@ -18085,6 +18155,18 @@ TPS62177</text>
 <pinref part="C27" gate="G$1" pin="1"/>
 <junction x="119.38" y="58.42"/>
 <pinref part="U6" gate="G$1" pin="VOUT"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="EN"/>
+<wire x1="53.34" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="104.14" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="104.14" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<label x="33.02" y="106.68" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -18997,6 +19079,9 @@ Get info from Ying!</text>
 <instance part="C23" gate="G$1" x="99.06" y="43.18"/>
 <instance part="GND36" gate="1" x="99.06" y="33.02"/>
 <instance part="GND38" gate="1" x="152.4" y="33.02"/>
+<instance part="R25" gate="G$1" x="124.46" y="88.9" rot="R90"/>
+<instance part="R29" gate="G$1" x="124.46" y="76.2" rot="R90"/>
+<instance part="GND7" gate="1" x="124.46" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -19097,11 +19182,6 @@ Get info from Ying!</text>
 <wire x1="50.8" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="COM"/>
-<wire x1="91.44" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<label x="91.44" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$7" gate="G$1" pin="REF-"/>
 <wire x1="58.42" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 <label x="50.8" y="43.18" size="1.778" layer="95"/>
@@ -19135,6 +19215,11 @@ Get info from Ying!</text>
 <pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="35.56" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="124.46" y1="71.12" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -19163,6 +19248,12 @@ Get info from Ying!</text>
 <pinref part="U$7" gate="G$1" pin="REF+"/>
 <wire x1="58.42" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <label x="50.8" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="93.98" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
+<label x="127" y="96.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ADC0" class="0">
@@ -19455,6 +19546,21 @@ Get info from Ying!</text>
 <label x="132.08" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="COM" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="COM"/>
+<wire x1="91.44" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
+<label x="91.44" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="81.28" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<junction x="124.46" y="81.28"/>
+<label x="132.08" y="81.28" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -19466,9 +19572,14 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
