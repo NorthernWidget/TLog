@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17062,6 +17062,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R29" library="bschulz" deviceset="R-EU_" device="R0603" technology="10K" value="10k"/>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C7" library="bschulz" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
+<part name="C8" library="bschulz" deviceset="C-EU" device="C0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -17184,6 +17185,7 @@ Add ferite beads and/or protection diode?</text>
 <attribute name="MPN" x="35.56" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C6" gate="G$1" x="30.48" y="132.08" rot="R90"/>
+<instance part="C8" gate="G$1" x="73.66" y="205.74"/>
 </instances>
 <busses>
 </busses>
@@ -17215,8 +17217,9 @@ Add ferite beads and/or protection diode?</text>
 <net name="3V3" class="0">
 <segment>
 <pinref part="RTC1" gate="G$1" pin="VCC"/>
-<wire x1="91.44" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="91"/>
 <label x="83.82" y="208.28" size="1.778" layer="95"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="208.28" x2="91.44" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC@2"/>
@@ -17334,7 +17337,12 @@ Add ferite beads and/or protection diode?</text>
 <pinref part="RTC1" gate="G$1" pin="GND"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="116.84" y1="203.2" x2="119.38" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="203.2" x2="119.38" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="203.2" x2="119.38" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="195.58" x2="119.38" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="200.66" x2="73.66" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="195.58" x2="119.38" y2="195.58" width="0.1524" layer="91"/>
+<junction x="119.38" y="195.58"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND@3"/>
