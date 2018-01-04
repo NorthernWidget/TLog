@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.127" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
+<grid distance="0.127" unitdist="mm" unit="mil" style="lines" multiple="1" display="no" altdistance="0.0635" altunitdist="mm" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30,13 +30,13 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -60,7 +60,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -113,7 +113,7 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -157,9 +157,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.127" y1="0.09525" x2="124.257" y2="0.09525" width="0" layer="20"/>
-<wire x1="124.257" y1="0.09525" x2="124.257" y2="45.36525" width="0" layer="20"/>
-<wire x1="0.127" y1="45.36525" x2="0.127" y2="0.09525" width="0" layer="20"/>
+<wire x1="0.127" y1="0.09525" x2="124.257" y2="0.09525" width="0.254" layer="20"/>
+<wire x1="124.257" y1="0.09525" x2="124.257" y2="45.36525" width="0.254" layer="20"/>
+<wire x1="0.127" y1="45.36525" x2="0.127" y2="0.09525" width="0.254" layer="20"/>
 <rectangle x1="28.477" y1="25.804" x2="28.757" y2="26.254" layer="29"/>
 <text x="4.699" y="39.497" size="1.778" layer="51" font="vector" ratio="10" rot="SR180">RST</text>
 <text x="4.953" y="7.493" size="1.778" layer="51" font="vector" ratio="10" rot="SR180">LOG</text>
@@ -207,7 +207,7 @@
 <text x="99.187" y="44.831" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">5V</text>
 <text x="103.124" y="44.831" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">GND</text>
 <text x="22.7965" y="44.958" size="1.27" layer="51" font="vector" ratio="10" rot="SR180">SPI</text>
-<wire x1="124.257" y1="45.36525" x2="0.127" y2="45.36525" width="0" layer="20"/>
+<wire x1="124.257" y1="45.36525" x2="0.127" y2="45.36525" width="0.254" layer="20"/>
 <text x="18.941" y="18.947" size="1.4224" layer="22" ratio="20" rot="MR0" align="bottom-right">TLog  v1.0.0
 ----------------------
 Open-source scientific
@@ -215,7 +215,7 @@ data logger
 ----------------------
 Made in Minnesota</text>
 <text x="8.868" y="15.59" size="1.778" layer="22" ratio="20" rot="MR0" align="bottom-right">Open-source for the outdoors</text>
-<text x="7.541" y="16.582" size="0.6096" layer="22" ratio="20" rot="MR0" align="bottom-right">TM</text>
+<text x="7.541" y="16.582" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="bottom-right">TM</text>
 <text x="40.542" y="13.814" size="1.4224" layer="22" ratio="20" rot="MR0" align="top-left">Developed in part at the
 University of Minnesota in
 parntnership with 
